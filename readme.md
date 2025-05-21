@@ -1,0 +1,133 @@
+# 🔮 Local Image Generator using small-stable-diffusion-v0
+
+Generate AI images locally on a CPU-only Mac (e.g., MacBook 2017) using the [`OFA-Sys/small-stable-diffusion-v0`](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0) model from Hugging Face.
+
+---
+
+## ✅ Features
+
+- Runs fully offline (after initial model download)
+- CPU-compatible (no GPU or CUDA needed)
+- Generates one or multiple images per prompt
+- Custom resolution (16:9 for YouTube supported)
+- Easy to modify and expand
+
+---
+
+## 💻 System Requirements
+
+- macOS with Python 3.10.12
+- At least 8 GB RAM (more is better)
+- No GPU required
+
+Tested on: **MacBook 13-inch, 2017, Intel i5, 8GB RAM**
+
+---
+
+## 🧪 Setup Instructions
+
+### 1. Clone the repo (or create your project folder)
+```bash
+git clone https://github.com/rashid2538/huggingface-image-generator-using-cpu
+cd huggingface-image-generator-using-cpu
+```
+
+### 2. Create and activate virtual environment (optional)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install numpy=1.26.4
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+pip install diffusers==0.20.2 transformers==4.31.0 huggingface_hub==0.17.3 accelerate==0.21.0 safetensors
+```
+
+---
+
+## 🚀 Usage
+
+### Run the script:
+
+```bash
+python main.py prompts.txt ./outputs
+```
+
+### Output
+
+Images will be saved in the current directory as:
+
+```
+./outputs/image_0.png
+./outputs/image_1.png
+...
+```
+
+---
+
+## ✍️ Options & Customization
+
+Edit the `main.py` script to change the following:
+
+Replace this with your own creative prompt.
+
+---
+
+### 🔹 Image Count
+
+```python
+num_images = 3
+```
+
+---
+
+### 🔹 Dimensions (width and height)
+
+```python
+width = 640
+height = 360
+```
+
+*Note: Width and heigh should be a multiple of 8*
+---
+
+### 🔹 Inference Steps (Quality vs Speed)
+
+```python
+num_inference_steps = 25  # Increase to 40–50 for better quality
+```
+
+---
+
+## 🧠 Notes
+
+* First run will download model weights (\~1.3GB).
+* Execution is slow on CPU (1–5 minutes per image).
+* Avoid high batch sizes or too-large resolutions to prevent memory errors.
+
+---
+
+## 📷 Example Prompt Ideas (prompts.txt)
+
+* `"A futuristic city skyline at night, in cinematic lighting"`
+* `"A traditional Indian bride in red saree, beautiful lighting"`
+* `"A sci-fi soldier in neon armor, concept art style"`
+
+---
+
+## 🧰 Credits
+
+* [Lykon/dreamshaper-6](https://huggingface.co/Lykon/dreamshaper-6)
+* [OFA-Sys/small-stable-diffusion-v0](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0)
+* Hugging Face Diffusers
+* PyTorch (CPU build)
+
+---
+
+## 🗂 License
+
+MIT License — feel free to modify, remix, and share.

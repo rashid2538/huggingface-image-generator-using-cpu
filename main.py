@@ -3,6 +3,12 @@ from diffusers import StableDiffusionPipeline
 from pathlib import Path
 import sys
 
+# settings
+number_of_steps = 25
+num_images = 1
+width = 640 # Should be a multiple of 8
+height = 360 # Should be a multiple of 8
+
 # Set device to CPU (your Mac doesn't have CUDA/GPU support)
 device = "cpu" #cpu/xpu
 
@@ -19,7 +25,7 @@ pipe = pipe.to(device)
 
 def generate_image(prompt, output, steps=25):
     print("Generating image...")
-    image = pipe(prompt, num_inference_steps=steps, width=800, height=450).images[0]
+    image = pipe(prompt, num_inference_steps=steps, width=width, height=height, num_images_per_prompt=num_images).images[0]
     image.save(output)
     print(f"Image saved to {output}")
 
@@ -35,7 +41,7 @@ if len(sys.argv) > 2:
                 prompt = line.strip()
                 output = f"{outputPath}/image_{index}.png"
                 print(f"Prompt: {prompt} - Output: {output}")
-                generate_image(prompt, output)
+                generate_image(prompt, output, number_of_steps)
     else:
         print("Input is not a file!")
 else:
