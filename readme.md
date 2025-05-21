@@ -1,4 +1,4 @@
-# 🔮 Local Image Generator using small-stable-diffusion-v0
+# 🔮 Local Image Generator using Hugggin Face Diffusers
 
 Generate AI images locally on a CPU-only Mac (e.g., MacBook 2017) using the [`OFA-Sys/small-stable-diffusion-v0`](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0) model from Hugging Face.
 
@@ -92,7 +92,7 @@ width = 640
 height = 360
 ```
 
-*Note: Width and heigh should be a multiple of 8*
+*Note: Width and height should be a multiple of 8*
 ---
 
 ### 🔹 Inference Steps (Quality vs Speed)
