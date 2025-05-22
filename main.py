@@ -27,20 +27,21 @@ def generate_image(prompt, output, steps=25):
     image.save(output)
     print(f"Image saved to {output} ...")
 
-if len(sys.argv) > 2:
-    inputFile = sys.argv[1]
-    outputPath = sys.argv[2]
-    print(f"Input file : {input}")
+if __name__ == "__main__":
+    if len(sys.argv) > 2:
+        inputFile = sys.argv[1]
+        outputPath = sys.argv[2]
+        print(f"Input file : {input}")
 
-    if Path(inputFile).is_file():
-        Path(outputPath).mkdir(parents=True, exist_ok=True)
-        with open(inputFile, 'r') as f:
-            for index, line in enumerate(f):
-                prompt = line.strip()
-                output = f"{outputPath}/image_{index}.png"
-                print(f"Prompt: {prompt} - Output: {output}")
-                generate_image(prompt, output, number_of_steps)
+        if Path(inputFile).is_file():
+            Path(outputPath).mkdir(parents=True, exist_ok=True)
+            with open(inputFile, 'r') as f:
+                for index, line in enumerate(f):
+                    prompt = line.strip()
+                    output = f"{outputPath}/image_{index}.png"
+                    print(f"Prompt: {prompt} - Output: {output}")
+                    generate_image(prompt, output, number_of_steps)
+        else:
+            print("Input is not a file!")
     else:
-        print("Input is not a file!")
-else:
-    print("No input/output path provided!")
+        print("No input/output path provided!")

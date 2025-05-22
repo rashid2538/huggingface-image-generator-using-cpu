@@ -32,12 +32,16 @@ git clone https://github.com/rashid2538/huggingface-image-generator-using-cpu
 cd huggingface-image-generator-using-cpu
 ```
 
+---
+
 ### 2. Create and activate virtual environment (optional)
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
+
+---
 
 ### 3. Install dependencies
 
@@ -51,13 +55,27 @@ pip install diffusers==0.20.2 transformers==4.31.0 huggingface_hub==0.17.3 accel
 
 ## 🚀 Usage
 
-### Run the script:
+### 1. Run the script:
 
 ```bash
 python main.py prompts.txt ./outputs
 ```
 
-### Output
+**"Kick Back, Grab a Coffee ☕, and Chill—This Ain’t a Netflix Series! �🎬"**  
+
+Relax, my impatient friend! This won’t take **a full day** ⏳🗓️ (unlike your last Windows update 💻😤). Just:  
+
+1. **Sit down** 🪑 (or lie down, no judgment 🛋️💤).  
+2. **Order that fancy latte** ☕✨ (extra foam, because you *deserve it* 💅).  
+3. **Blink twice** 👀… and *BOOM!* 💥 **Done!** Faster than your Wi-Fi buffering. 📶🐢  
+
+No all-nighters here! **Unless you *want* to stare at the screen for fun.** (Weird flex, but okay. 🤷‍♂️😂)
+
+Now **stop stressing**—your computer’s working *harder than your ex’s therapist*. 😏🔥 **Let’s go!** 🚀
+
+---
+
+### 2. Output
 
 Images will be saved in the current directory as:
 
@@ -66,6 +84,19 @@ Images will be saved in the current directory as:
 ./outputs/image_1.png
 ...
 ```
+
+**"Okay, So These Ain’t Picasso Masterpieces… But Cut Your Machine Some Slack! 🎨🤖💻"**  
+
+Look, I get it—these images might not be **Mona Lisa-level** 🖼️✨ or make your eyeballs weep with joy 😭🎨. But hey! **Your computer and You** teamed up like two sleep-deprived interns ☕👾, scrambling to make art happen!
+
+**Give us a high-five!** ✋ Because:  
+- **We tried.** (Unlike your ex. 😏)
+- **Pixels were harmed** in the making. (RIP, perfect shading. 🪦)
+- **This is AI art, not magic!** (Unless you count "turning code into a blob monster" as magic. 🧙‍♂️👾)
+
+So yeah, **applaud the effort** 👏, laugh at the wonky details 🤪, and remember: **Even Van Gogh started with stick figures.** (Probably. 🖍️🌻)
+
+**Now go generate something weirder.** I dare you. 😈🔥
 
 ---
 
