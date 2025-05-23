@@ -144,9 +144,9 @@ num_inference_steps = 25  # Increase to 40–50 for better quality
 
 ## 📷 Example Prompt Ideas (prompts.txt)
 
-* `"A futuristic city skyline at night, in cinematic lighting"`
-* `"A traditional Indian bride in red saree, beautiful lighting"`
-* `"A sci-fi soldier in neon armor, concept art style"`
+| A futuristic city skyline at night, in cinematic lighting | A traditional Indian bride in red saree, beautiful lighting | A sci-fi soldier in neon armor, concept art style |
+|---|---|---|
+| ![A futuristic city skyline at night, in cinematic lighting](https://github.com/rashid2538/huggingface-image-generator-using-cpu/blob/main/outputs/image_0.png?raw=true) | ![A traditional Indian bride in red saree, beautiful lighting](https://github.com/rashid2538/huggingface-image-generator-using-cpu/blob/main/outputs/image_1.png?raw=true) | ![A sci-fi soldier in neon armor, concept art style](https://github.com/rashid2538/huggingface-image-generator-using-cpu/blob/main/outputs/image_2.png?raw=true) |
 
 ---
 
