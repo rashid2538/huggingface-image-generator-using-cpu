@@ -136,8 +136,8 @@ num_inference_steps = 25  # Increase to 40–50 for better quality
 
 ## 🧠 Notes
 
-* First run will download model weights (\~1.3GB).
-* Execution is slow on CPU (1–5 minutes per image).
+* First run will download model weights (size in GBs).
+* Execution is slow on CPU (1–10 minutes per image).
 * Avoid high batch sizes or too-large resolutions to prevent memory errors.
 
 ---
