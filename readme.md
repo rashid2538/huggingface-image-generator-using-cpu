@@ -1,6 +1,6 @@
 # 🔮 Local Image Generator using Hugggin Face Diffusers
 
-Generate AI images locally on a CPU-only Mac (e.g., MacBook 2017) using the [`OFA-Sys/small-stable-diffusion-v0`](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0) model from Hugging Face.
+Generate AI images locally on a CPU-only Mac (e.g., MacBook 2017) using the [`Lykon/dreamshaper-6`](https://huggingface.co/Lykon/dreamshaper-6) model from Hugging Face.
 
 ---
 
